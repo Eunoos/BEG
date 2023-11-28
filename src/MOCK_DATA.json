@@ -1,0 +1,197 @@
+{
+  "list": [
+    {
+      "id": 0,
+      "title": "FxA Project 2023",
+      "location": "영영",
+      "start": "2023.11.02",
+      "end": "2023.12.08",
+      "category": "전시",
+      "src": "/images/poster1.png",
+      "bookmarked": 11
+    },
+    {
+      "id": 1,
+      "title": "FxA Project 2023",
+      "location": "영영",
+      "start": "2023.11.02",
+      "end": "2023.12.08",
+      "category": "연극",
+      "src": "",
+      "bookmarked": 10
+    },
+    {
+      "id": 2,
+      "title": "FxA Project 2023",
+      "location": "영영",
+      "start": "2023.11.02",
+      "end": "2023.12.08",
+      "category": "뮤지컬",
+      "src": "/images/poster1.png",
+      "bookmarked": 9
+    },
+    {
+      "id": 3,
+      "title": "FxA Project 2023",
+      "location": "영영",
+      "start": "2023.11.02",
+      "end": "2023.12.08",
+      "category": "클래식",
+      "src": "/images/poster1.png",
+      "bookmarked": 8
+    },
+    {
+      "id": 4,
+      "title": "FxA Project 2023",
+      "location": "영영",
+      "start": "2023.11.02",
+      "end": "2023.12.08",
+      "category": "전통예술",
+      "src": "/images/poster1.png",
+      "bookmarked": 7
+    },
+    {
+      "id": 5,
+      "title": "FxA Project 2023",
+      "location": "영영",
+      "start": "2023.11.02",
+      "end": "2023.12.08",
+      "category": "무용",
+      "src": "/images/poster1.png",
+      "bookmarked": 6
+    },
+    {
+      "id": 6,
+      "title": "FxA Project 2023",
+      "location": "영영",
+      "start": "2023.11.02",
+      "end": "2023.12.08",
+      "category": "오페라",
+      "src": "/images/poster1.png",
+      "bookmarked": 5
+    },
+    {
+      "id": 7,
+      "title": "FxA Project 2023",
+      "location": "영영",
+      "start": "2023.11.02",
+      "end": "2023.12.08",
+      "category": "기타",
+      "src": "/images/poster1.png",
+      "bookmarked": 4
+    },
+    {
+      "id": 8,
+      "title": "FxA Project 2023",
+      "location": "영영",
+      "start": "2023.11.02",
+      "end": "2023.12.08",
+      "category": "대중음악",
+      "src": "/images/poster1.png",
+      "bookmarked": 3
+    },
+    {
+      "id": 9,
+      "title": "FxA Project 2023",
+      "location": "영영",
+      "start": "2023.11.02",
+      "end": "2023.12.08",
+      "category": "복합",
+      "src": "/images/poster1.png",
+      "bookmarked": 2
+    },
+    {
+      "id": 10,
+      "title": "FxA Project 2023",
+      "location": "영영",
+      "start": "2023.11.02",
+      "end": "2023.12.08",
+      "category": "서커스/마술",
+      "src": "/images/poster1.png",
+      "bookmarked": 1
+    },
+    {
+      "id": 11,
+      "title": "FxA Project 2023",
+      "location": "영영",
+      "start": "2023.11.02",
+      "end": "2023.12.08",
+      "category": "콘서트",
+      "src": "/images/poster1.png",
+      "bookmarked": 0
+    },
+    {
+      "id": 12,
+      "title": "나중에 하는 전시",
+      "location": "영영영",
+      "start": "2023.12.23",
+      "end": "2024.01.23",
+      "category": "콘서트",
+      "src": "",
+      "bookmarked": 0
+    }
+  ],
+  "posts": [
+    {
+      "id": 0,
+      "ex_title": "FxA Project 2023",
+      "category": "전시",
+      "author": "김창희",
+      "title": "FxA Project 2023 관람후기",
+      "content": "<h1>FxA Project 2023 전시를 관람했습니다.</h1></br><p>현대적이고 창의적인 작품들이 인상적이었어요. 특히 <strong>예술가들의 실험적인 시도와 다양한 매체의 조합</strong>이 돋보였습니다.</p><p>전체적으로 독특하고 혁신적인 느낌을 받았는데, 특히 작품들 간의 연결고리와 흐름이 잘 구성되어 있어 전시를 둘러보는 동안 흥미로웠습니다.</p><p>다음 전시도 기대됩니다!</p>",
+      "views": 22,
+      "likes": 50,
+      "src": "/images/poster1.png",
+      "posted_at": "2023-11-18",
+      "recommended": true
+    },
+    {
+      "id": 1,
+      "ex_title": "창작 오페라",
+      "category": "오페라",
+      "author": "정오페라",
+      "title": "창작 오페라 관람후기",
+      "content": "너무 감명깊어요",
+      "views": 22,
+      "likes": 7,
+      "posted_at": "2023-11-19",
+      "recommended": false
+    },
+    {
+      "id": 2,
+      "ex_title": "재밌는 뮤지컬",
+      "category": "뮤지컬",
+      "author": "박뮤지컬",
+      "title": "재밌는 뮤지컬 관람후기",
+      "content": "정말 재밌었어요",
+      "views": 22,
+      "likes": 13,
+      "posted_at": "2023-11-20",
+      "recommended": false
+    },
+    {
+      "id": 3,
+      "ex_title": "내한콘서트",
+      "category": "콘서트",
+      "author": "이콘서트",
+      "title": "내한콘서트 관람후기",
+      "content": "감동적이에요",
+      "views": 22,
+      "likes": 10,
+      "posted_at": "2023-11-21",
+      "recommended": false
+    },
+    {
+      "id": 4,
+      "ex_title": "발레공연",
+      "category": "무용",
+      "author": "김무용",
+      "title": "발레공연 관람후기",
+      "content": "감동적이에요",
+      "views": 22,
+      "likes": 18,
+      "posted_at": "2023-11-22",
+      "recommended": true
+    }
+  ]
+}
