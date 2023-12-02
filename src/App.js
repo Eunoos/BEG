@@ -12,6 +12,9 @@ import ExDetail from "./components/template/ExDetail";
 import Write from "./components/template/Write";
 import ReviewDetail from "./components/template/ReviewDetail";
 import Search from "./components/template/Search";
+import Login from "./components/template/Login";
+import Join from "./components/template/Join";
+import MyPage from "./components/template/MyPage";
 
 const Wrapper = styled.div`
   padding-top: 80px;
@@ -47,6 +50,9 @@ export default function App() {
             <Route path="/review_detail/:id" element={<ReviewDetail />} />
             <Route path="/write" element={<Write />} />
             <Route path="/search" element={<Search />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/join" element={<Join />} />
+            <Route path="/join" element={<MyPage />} />
           </Routes>
         </ContentWrapper>
         <Footer />
