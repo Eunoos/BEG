@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 import Join from "./Join";
 
 const User = {
-    id : 'dmsdn11',
-    pw : 'hello11'
+    userId : 'dmsdn11',
+    password : 'hello11'
 }
 // 더미데이터 리코일 axios 사용하여 구현 수정
 
@@ -18,15 +18,15 @@ const Title = styled.h2`
 `
 
 export default function Login() {
-    const [id, setid] = useState('');
-    const [pw, setPw] = useState('');
+    const [userId, setUserId] = useState('');
+    const [password, setPossword] = useState('');
     const navigate = useNavigate();
     // const [idPrime, setidPrime] = useState(false);
     // const [pwPrime, setpwPrime] = useState(false);
 
 
     const onClickLogin = ()=>{
-        if(id === User.id && pw === User.pw) {
+        if(userId === User.userId && pw === User.pw) {
             alert('안녕하세요!');
             navigate("/")
         } else{
@@ -45,7 +45,7 @@ export default function Login() {
                     <input 
                         type="text"
                         placeholder="아이디"
-                        value={id}
+                        value={userId}
                         name="User-id"
                         onChange={(e)=>setid(e.target.value)}
                     />
@@ -55,7 +55,7 @@ export default function Login() {
                     <input
                         type="password"
                         placeholder="비밀번호"
-                        value={pw}
+                        value={password}
                         name="User-pw"
                         onChange={(e)=>setPw(e.target.value)}
                     />

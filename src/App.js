@@ -52,7 +52,7 @@ export default function App() {
             <Route path="/search" element={<Search />} />
             <Route path="/login" element={<Login />} />
             <Route path="/join" element={<Join />} />
-            <Route path="/join" element={<MyPage />} />
+            <Route path="/mypage" element={<MyPage />} />
           </Routes>
         </ContentWrapper>
         <Footer />
