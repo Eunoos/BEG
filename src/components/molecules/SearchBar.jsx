@@ -6,6 +6,7 @@ import SearchButton from "../atoms/SearchButton";
 import SearchInput from "../atoms/SearchInput";
 import { useNavigate } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
+import ListVertical from "./ListVertical";
 
 const Title = styled.h3`
     font-size: 1.125rem;
@@ -17,24 +18,40 @@ const SearchExList = styled.ul`
   display: flex;
 `;
 
+
 export default function SearchBar() {
     const [SearchItem, setSearchItem] = useState('');
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    function searchData(){data.list.map((item, index)=>{
+        if(item.title.toLowerCase().includes(SearchItem.toLocaleLowerCase())){
+        return <ListVertical key={index} item={item} />
+        // alert('성공')
+        
+    }
+  })}
     const enterSearch = (event)=>{
         if (event.key === "Enter"){
-            let keyword = event.target.value
-            navigate(`/?q=${keyword}`)
+            setSearchItem(event.target.value);
+            searchData();
+            alert(SearchItem);
+            
         }
     }
     return (
         <>
-        {/* <Title>에서 진행중인 전시.공연 </Title> */}
+        <Title>{SearchItem}이 포함된 전시.공연 </Title>
             {/* <SearchInput />
             <SearchButton /> */}
             <div>
                 {/* <input type="text" placeholder="Search..." onChange={(e)=>{setSearchItem(e.target.value)}} /> */}
                 <input type="text" placeholder="Search..." onKeyPress={(e)=>{enterSearch(e)}} />
-                {data.list.filter((item)=>{
+                {/* map써서 필요한데이터만 리턴해보기 */}
+                {/* {data.list.map((item, index)=>{
+                    if(item.title.toLowerCase().includes(SearchItem.toLocaleLowerCase())){
+                    return <ListVertical key={index} item={item} />
+                }
+              })} */}
+                {/* {data.list.filter((item)=>{
                     if (SearchItem ==""){
                         return item
                     } else if (item.title.toLowerCase().includes(SearchItem.toLocaleLowerCase())){
@@ -42,7 +59,7 @@ export default function SearchBar() {
                     }
                 }).map((item)=>{
                     return <SearchExList></SearchExList>
-                })}
+                })} */}
             </div>
         </>
     );

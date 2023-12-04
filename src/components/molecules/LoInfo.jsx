@@ -4,7 +4,7 @@ import styled from "styled-components";
 const LoImage = styled.a`
   display: block;
   width: 100%;
-  height: 100%;
+  /* height: 60%; */
   img {
     width: 100%;
     height: 400px;

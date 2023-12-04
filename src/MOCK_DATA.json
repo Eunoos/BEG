@@ -129,7 +129,19 @@
       "category": "콘서트",
       "src": "",
       "bookmarked": 0
+    },
+    {
+      "id": 13,
+      "title": "날개짓",
+      "location": "부산시립미술관",
+      "start": "2023.12.23",
+      "end": "2024.01.23",
+      "category": "뮤지컬",
+      "src": "/images/poster1.png",
+      "bookmarked": 0
     }
+    
+
   ],
   "posts": [
     {
