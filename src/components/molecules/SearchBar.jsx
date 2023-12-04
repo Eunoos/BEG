@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 import ListVertical from "./ListVertical";
 
+
 const Title = styled.h3`
     font-size: 1.125rem;
     padding: 10px 0px;
@@ -16,24 +17,36 @@ const Title = styled.h3`
 const SearchExList = styled.ul`
   margin-top: 1.25rem;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 
 export default function SearchBar() {
     const [SearchItem, setSearchItem] = useState('');
     const navigate = useNavigate();
-    function searchData(){data.list.map((item, index)=>{
-        if(item.title.toLowerCase().includes(SearchItem.toLocaleLowerCase())){
-        return <ListVertical key={index} item={item} />
-        // alert('성공')
-        
-    }
-  })}
+    const [searchList, setSearchList] = useState([]);
+
+//     function searchData(){data.list.map((item, index)=>{
+//         if(item.title.toLowerCase().includes(SearchItem.toLocaleLowerCase())){
+//         // return <ListVertical key={index} item={item} />
+//         // alert('성공')
+//             const searchVal = [index, item];
+//             setSearchList([...searchList, searchVal]);
+//     }
+//   })}
     const enterSearch = (event)=>{
         if (event.key === "Enter"){
             setSearchItem(event.target.value);
-            searchData();
-            alert(SearchItem);
+            setSearchList([]);
+            {data.list.map((item, index)=>{
+                if(item.title.toLowerCase().includes(SearchItem.toLocaleLowerCase())){
+                // alert('성공')
+                    const searchVal = [index, item];
+                    setSearchList([...searchList, searchVal]);
+            }
+            })}
+            console.log(searchList);
             
         }
     }
@@ -43,23 +56,17 @@ export default function SearchBar() {
             {/* <SearchInput />
             <SearchButton /> */}
             <div>
-                {/* <input type="text" placeholder="Search..." onChange={(e)=>{setSearchItem(e.target.value)}} /> */}
-                <input type="text" placeholder="Search..." onKeyPress={(e)=>{enterSearch(e)}} />
+                <input type="search" placeholder="Search..." onKeyPress={(e)=>{enterSearch(e)}} />
                 {/* map써서 필요한데이터만 리턴해보기 */}
-                {/* {data.list.map((item, index)=>{
-                    if(item.title.toLowerCase().includes(SearchItem.toLocaleLowerCase())){
-                    return <ListVertical key={index} item={item} />
-                }
-              })} */}
-                {/* {data.list.filter((item)=>{
-                    if (SearchItem ==""){
-                        return item
-                    } else if (item.title.toLowerCase().includes(SearchItem.toLocaleLowerCase())){
-                        return item
-                    }
-                }).map((item)=>{
-                    return <SearchExList></SearchExList>
-                })} */}
+                <SearchExList>
+                    {searchList.length===0 ?
+                        <p>{SearchItem}를(을) 포함한 검색결과가 없습니다.</p>:
+                        searchList.map((v)=>{
+                            return <ListVertical key={v[0]} item={v[1]} />
+                        })}
+                    
+                </SearchExList>
+                
             </div>
         </>
     );
