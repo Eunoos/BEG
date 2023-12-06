@@ -11,7 +11,7 @@ export default function Location() {
       <SectionHeader location />
       <SectionContent>
         <LoMinimap />
-        <LoInfo />
+        {/* <LoInfo /> */}
         <LoIngEx />
       </SectionContent>
     </>
