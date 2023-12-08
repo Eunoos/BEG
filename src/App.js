@@ -15,6 +15,8 @@ import Search from "./components/template/Search";
 import Login from "./components/template/Login";
 import Join from "./components/template/Join";
 import MyPage from "./components/template/MyPage";
+import LoDetail from "./components/template/LoDetail";
+
 
 const Wrapper = styled.div`
   padding-top: 80px;
@@ -53,6 +55,7 @@ export default function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/join" element={<Join />} />
             <Route path="/mypage" element={<MyPage />} />
+            <Route path="/lo_detail/:id" element={<LoDetail />} />
           </Routes>
         </ContentWrapper>
         <Footer />

@@ -19,8 +19,9 @@ const LoExList = styled.ul`
 
 
 
-export default function LoIngEx() {
+export default function LoIngEx({keyword}) {
   const [pickLo, setPickLo] = useState("부산시립미술관");
+  // const [pickLo, setPickLo] = useState({keyword});
   const [count, setCount] = useState(0);
 
   return (
